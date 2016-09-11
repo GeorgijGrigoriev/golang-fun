@@ -8,7 +8,7 @@ import (
 
 func main(){
     var input int
-    fmt.Println("Enter a number of itterations: ")
+    fmt.Println("Введите число иттераций: ")
     fmt.Scanf("%d", &input)
     test(input)
 }
