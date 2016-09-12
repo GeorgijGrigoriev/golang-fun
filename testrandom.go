@@ -14,9 +14,10 @@ func main() {
 		star += `*`
 	}
 	fmt.Println(star)
+	fmt.Println(" Текущее время: ", time.Now())
 	fmt.Println(" Проверка случайности по числу иттераций.\n Осторожно, число больше 1 млн. может сильно загрузить процессор.")
-	fmt.Println(" Введите число иттераций: ")
 	fmt.Println(star)
+	fmt.Println(" Введите число иттераций: ")
 	fmt.Scanf("%d", &input)
 	test(input)
 }
