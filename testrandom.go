@@ -9,12 +9,16 @@ import (
 func main() {
 	var input int
 	var star string
-	l := int(len(`Осторожно, число больше 1 млн. может сильно загрузить процессор.`))
+	var line string
+	l := int(len([]rune(`Осторожно, число больше 1 млн. может сильно загрузить процессор.`)))
 	for i := 0; i <= l; i++ {
 		star += `*`
+		line += `-`
 	}
 	fmt.Println(star)
+	fmt.Println(line)
 	fmt.Println(" Текущее время: ", time.Now())
+	fmt.Println(line)
 	fmt.Println(" Проверка случайности по числу иттераций.\n Осторожно, число больше 1 млн. может сильно загрузить процессор.")
 	fmt.Println(star)
 	fmt.Println(" Введите число иттераций: ")
